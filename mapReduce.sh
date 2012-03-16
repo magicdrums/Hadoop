@@ -4,6 +4,7 @@
 
 VAR="HADOOP_CLASSPATH=/path/to/hadoop_archive.jar:\$HADOOP_CLASSPATH"
 FILES=( files_201110.txt files_201111.txt files_201112.txt files_YYYYMM.txt )
+export $VAR
 
 for x in ${FILES[@]}
 do
