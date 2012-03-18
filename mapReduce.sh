@@ -1,6 +1,6 @@
 #!/bin/bash
 # To create 'files' file with selected file names/dates:
-# hadoop fs -ls /user/smart/production/referrals/daily/ | grep YYYYMM > files_YYYYMM.txt
+# hadoop fs -ls /path/to/files/ | grep YYYYMM > files_YYYYMM.txt
 
 VAR="HADOOP_CLASSPATH=/path/to/hadoop_archive.jar:\$HADOOP_CLASSPATH"
 FILES=( files_201110.txt files_201111.txt files_201112.txt files_YYYYMM.txt )
